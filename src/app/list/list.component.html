@@ -1,0 +1,39 @@
+<h2>
+    {{title}}
+</h2>
+<div id="main-table">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Descrição
+                </th>
+                <th>
+                    Feito
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tarefa of tarefas; let i = index;">
+                <td *ngIf="i <= 12">
+                    {{tarefa.id}}
+                </td>
+                <td *ngIf="i <= 12">
+                    {{tarefa.descricao}}
+                </td>
+                <td *ngIf="i <= 12 && tarefa.feito == true">
+                    <input type="checkbox" checked = 'true' disabled>
+                </td>
+                <td *ngIf="i <= 12 && tarefa.feito == false">
+                    <input type="checkbox" disabled>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button *ngIf="tarefas.length > 13">
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+</div>

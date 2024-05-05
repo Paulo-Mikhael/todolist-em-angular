@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    height: auto;
+    background-color: gray;
+    border: 2px solid black;
+}
+table th, table td{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+table th{
+    background-color: white;
+    height: 30px;
+    padding: 0px 10px;
+}
+table td{
+    background-color: white;
+    padding: 5px;
+    max-width: 350px;
+}
+table td input{
+    width: 20px;
+    height: 20px;
+}

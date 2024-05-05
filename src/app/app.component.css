@@ -1,0 +1,45 @@
+header{
+    background-color: purple;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+header h1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    background-color: blueviolet;
+    width: 100%;
+    height: 92.3vh;
+}
+main nav{
+    width: 20%;
+    height: 100%;
+}
+main nav h2{
+    cursor: pointer;
+    background-color: rgb(126, 20, 224);
+    color: rgb(0, 0, 148);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+}
