@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ListaTarefas } from './base-tarefas';
 import { AppRoutingModule } from '../app-routing.module';
 
@@ -7,8 +7,11 @@ import { AppRoutingModule } from '../app-routing.module';
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
-export class ListComponent {
+export class ListComponent implements OnInit{
   title = 'Lista de Tarefas';
   tarefas = ListaTarefas;
-  dadosQuantidade = 10
+
+  ngOnInit(): void {
+    console.log('filhos ' + this.tarefas.length);
+  }
 }

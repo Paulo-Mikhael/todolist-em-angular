@@ -12,7 +12,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: purple;
     cursor: pointer;
 }
 main{
@@ -35,11 +35,15 @@ main nav h2{
     align-items: center;
     justify-content: center;
 }
+main nav h2:hover{
+    background-color: rgb(65, 1, 126);
+}
 main section{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: white;
     width: 80%;
     height: 100%;
+    overflow-y: scroll;
 }

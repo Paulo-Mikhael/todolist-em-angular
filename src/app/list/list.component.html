@@ -18,22 +18,19 @@
         </thead>
         <tbody>
             <tr *ngFor="let tarefa of tarefas; let i = index;">
-                <td *ngIf="i <= 12">
+                <td *ngIf="i < tarefas.length">
                     {{tarefa.id}}
                 </td>
-                <td *ngIf="i <= 12">
+                <td *ngIf="i < tarefas.length">
                     {{tarefa.descricao}}
                 </td>
-                <td *ngIf="i <= 12 && tarefa.feito == true">
+                <td *ngIf="i < tarefas.length && tarefa.feito == true">
                     <input type="checkbox" checked = 'true' disabled>
                 </td>
-                <td *ngIf="i <= 12 && tarefa.feito == false">
+                <td *ngIf="i < tarefas.length && tarefa.feito == false">
                     <input type="checkbox" disabled>
                 </td>
             </tr>
         </tbody>
     </table>
-    <button *ngIf="tarefas.length > 13">
-        <i class="fa-solid fa-arrow-right"></i>
-    </button>
 </div>
