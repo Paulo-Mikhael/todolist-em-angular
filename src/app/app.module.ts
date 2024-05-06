@@ -4,16 +4,22 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from "@angular/common";
 import { ListComponent } from "./list/list.component";
+import { CreateTaskComponent } from "./create-task/create-task.component";
+import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
         AppComponent,
-        ListComponent
+        ListComponent,
+        CreateTaskComponent
     ],
     imports: [
         BrowserModule,
         CommonModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

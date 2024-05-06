@@ -1,0 +1,18 @@
+<h1>
+    Criar tarefa
+</h1>
+<label for="descricao">Descrição: </label>
+<input [(ngModel)] = "descricao" type="text" name="descricao" id="descricao" #validDesc = "ngModel"
+    minlength="2" required>
+<label for="feito">Feita: </label>
+<input type="checkbox" name="feito" id="feito">
+<button [disabled]="!validDesc.valid" (click)="verifica()">Criar</button>
+
+<div *ngIf="!validDesc.valid">
+    <span *ngIf="validDesc.errors?.['required']">
+        Campo obrigatório!
+    </span>
+    <span *ngIf="validDesc.errors?.['minlength']">
+        Necessário pelo menos 2 caracteres!
+    </span>
+</div>
